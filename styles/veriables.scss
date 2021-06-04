@@ -1,0 +1,25 @@
+$primary-color-dark: #303F9F;
+$primary-color:#3F51B5;
+$primary-color-light:#C5CAE9;
+$primary-color-text:#FFFFFF;
+$accent-color:#448AFF;
+$primary-text-color:#212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+
+
+@mixin respond($breakpoint){
+
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) { @content }; //600px
+  }
+  @if $breakpoint == tab {
+      @media only screen and (max-width: 56.25em) { @content }; //900px
+  }
+  @if $breakpoint == netbook {
+    @media only screen and (max-width: 75em) { @content }; //1200px
+  }
+  @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 112.5em) { @content };//1800px
+  }
+}

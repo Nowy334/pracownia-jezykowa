@@ -1,0 +1,31 @@
+@import './veriables.scss';
+
+%container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+%text {
+  font-size: 1.7rem;
+  padding: 0.5rem;
+}
+
+%list {
+  min-width: 80%;
+  padding-left: 2.5rem;
+}
+
+%img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+%h4{
+  padding: 2rem 0 1rem 0.5rem;
+  font-size: 2.5rem;
+  color: $primary-text-color;
+}

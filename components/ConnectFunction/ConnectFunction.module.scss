@@ -1,0 +1,14 @@
+@import '../../styles/pageStyles.scss';
+
+.section {  
+  &__list{
+    @extend %list;
+  }
+
+  &__text{
+    @extend %text;
+    &:last-child{
+      padding-bottom: 10rem;
+    }
+  }
+}

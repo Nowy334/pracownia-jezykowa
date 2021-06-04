@@ -1,0 +1,39 @@
+@import '../../styles/pageStyles.scss';
+
+.section {
+  &__list{
+    @extend %list;
+  }
+
+  &__text{
+    @extend %text;
+
+    &--underline{
+      text-decoration: underline;
+      font-size: 1.7rem;
+      padding: 0.5rem;
+    }
+  }
+
+  &__container_img{
+    @extend %container;
+    &:last-child{
+      padding-bottom: 10rem;
+    }
+  }
+
+  &__img{
+    @extend %img;
+    width: 50rem;
+    @include respond(tab){
+      width: 32rem;
+    }
+  }
+
+  &__last {
+    &:last-child{
+      padding-bottom: 10rem;
+    }
+  }
+
+}

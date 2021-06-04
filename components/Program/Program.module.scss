@@ -1,0 +1,34 @@
+@import '../../styles/veriables.scss';
+@import '../../styles/pageStyles.scss';
+
+.section {
+  &__text{
+   @extend %text;
+    &:last-child{
+      padding-bottom: 10rem;
+    }
+  }
+
+  &__container_img{
+    @extend %container;
+  }
+
+  &__img{
+   @extend %img;
+   width: 45rem;
+   @include respond(tab){
+    width: 33rem;
+  }
+  }
+
+  &__link{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    width:28rem;
+  }
+
+  &__h4{
+   @extend %h4;
+  }
+
+}

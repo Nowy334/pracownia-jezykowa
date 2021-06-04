@@ -1,0 +1,28 @@
+@import '../../styles/pageStyles.scss';
+
+.section {
+
+  &__list{
+    @extend %list;
+  }
+
+  &__text{
+    @extend %text;
+
+    &--last{
+      @extend %text;
+      padding-bottom: 10rem;
+    }
+  }
+
+  &__link{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    width:28rem;
+  }
+
+  &__h4{
+   @extend %h4;
+  }
+
+}

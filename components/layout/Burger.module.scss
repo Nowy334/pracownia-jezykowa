@@ -1,0 +1,18 @@
+@import '../../styles/veriables.scss';
+
+.container {
+  display: none;
+  cursor: pointer;
+
+  @include respond(tab){
+    display: block;
+  }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}

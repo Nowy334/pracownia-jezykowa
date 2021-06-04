@@ -1,0 +1,8 @@
+@import '../../styles/pageStyles.scss';
+
+.section {
+  &__text{
+   @extend %text;
+
+  }
+}

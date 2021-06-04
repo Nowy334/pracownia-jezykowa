@@ -1,0 +1,49 @@
+@import '../../styles/pageStyles.scss';
+
+.section {
+
+  &__text{
+    @extend %text;
+
+    &--headphones{
+      font-size: 1.3rem;
+      padding: 0.5rem;
+      max-width:50rem;
+    }
+
+  }
+
+  &__container_img{
+    @extend %container;
+  }
+
+  &__img{
+    @extend %img;
+    width: 35rem;
+    @include respond(tab){
+      width: 30rem;
+    }
+  }
+
+  &__img2{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    padding: 2rem;
+  }
+
+  &__container{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab){
+      flex-direction: column;
+    }
+
+    &:last-child{
+      padding-bottom: 10rem;
+    }
+  }
+}

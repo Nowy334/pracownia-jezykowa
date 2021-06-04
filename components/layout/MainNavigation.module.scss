@@ -1,0 +1,45 @@
+@import '../../styles/veriables.scss';
+
+.sidebar{
+  width: 30rem;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  transition: all 0.5s ease-in-out;
+  @include respond(tab){
+    position: absolute;
+    transform: translateX(-100%);
+    width:100%;
+    z-index: 10;
+  }
+
+  &__list{
+    margin-top: 1rem;
+    list-style: none;
+    width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 10rem;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  }
+
+  &__title{
+    width: 100%;
+    padding: 2rem;
+    background-color: $primary-color-dark;
+    text-align: center;
+    font-size: 2rem;
+    height: 7.2rem;
+  }
+
+}
+
+.active {
+  @include respond(tab){
+    transform: translateX(0);
+  }
+}
+

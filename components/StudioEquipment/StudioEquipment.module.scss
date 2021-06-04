@@ -1,0 +1,29 @@
+@import '../../styles/pageStyles.scss';
+
+.section {
+  &__h4{
+    @extend %h4;
+  }
+  &__list{
+    @extend %list;
+  }
+
+  &__text{
+    @extend %text;
+  }
+
+  &__container_img{
+    @extend %container;
+    &:last-child{
+      padding-bottom: 10rem;
+    }
+  }
+
+  &__img{
+    @extend %img;
+    width: 42rem;
+    @include respond(tab){
+      width: 32rem;
+    }
+  }
+}

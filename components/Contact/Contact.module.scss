@@ -1,0 +1,24 @@
+@import '../../styles/pageStyles.scss';
+
+.section {
+
+  &__h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  &__h2 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  &__text{
+    @extend %text;
+  }
+
+  &__address{
+    font-size: 1.7rem;
+    padding: 0.5rem;
+  }
+}
